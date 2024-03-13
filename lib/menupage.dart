@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'grid_view.dart';
 import 'homepage.dart';
+import 'input_widget.dart';
 import 'list_view.dart';
 class menupage extends StatelessWidget {
   const menupage({super.key});
@@ -35,6 +36,13 @@ class menupage extends StatelessWidget {
                Navigator.push(context, MaterialPageRoute(builder: (context)=>ListviewExample()),);
              },
              child: Text('List_View'),
+           ),
+           SizedBox(height: 10,),
+           ElevatedButton(
+             onPressed: (){
+               Navigator.push(context, MaterialPageRoute(builder: (context)=>inputwidget()),);
+             },
+             child: Text('Input Widget'),
            )
          ],
         ),
